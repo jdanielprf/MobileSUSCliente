@@ -7,5 +7,9 @@
     <string name="title_activity_tela_chat">TelaChat</string>
     <string name="title_activity_tela_ocorrencia">TelaOcorrencia</string>
     <string name="title_activity_tela_conteudo">TelaConteudo</string>
+    <string name="enviar">enviar</string>
+    <string name="chat">Chat</string>
+    <string name="ocorrencia">Ocorrencia</string>
+    <string name="capturar">Capturar imagem</string>
 
 </resources>

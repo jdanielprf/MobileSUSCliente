@@ -8,9 +8,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
+    <Button
+        android:id="@+id/btnMainChat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/chat" />
+
+    <Button
+        android:id="@+id/btnMainEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btnMainChat"
+        android:layout_below="@+id/btnMainChat"
+        android:text="@string/ocorrencia" />
+
+    <Button
+        android:id="@+id/btnMainImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMainEvent"
+        android:layout_alignRight="@+id/btnMainEvent"
+        android:layout_below="@+id/btnMainEvent"
+        android:text="@string/capturar" />
 
 </RelativeLayout>

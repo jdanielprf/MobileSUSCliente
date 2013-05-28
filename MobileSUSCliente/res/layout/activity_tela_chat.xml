@@ -8,9 +8,33 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".TelaChat" >
 
-    <TextView
+    <EditText
+        android:id="@+id/txtChatMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtChatHistorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtChatMsg"
+        android:layout_alignLeft="@+id/txtChatMsg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/btnChatEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtChatMsg"
+        android:layout_alignParentRight="true"
+        android:text="@string/enviar" />
 
 </RelativeLayout>

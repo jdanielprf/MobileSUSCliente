@@ -1,7 +1,7 @@
 package br.ufma.cm.mobilesuscliente;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
 
 public class TelaChat extends Activity {

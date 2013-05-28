@@ -10,6 +10,7 @@ import android.view.View.OnClickListener;
 public class MainActivity extends Activity {
 
 	private View chat;
+	private View ocorrencia;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,18 +28,28 @@ public class MainActivity extends Activity {
 			}
 		});
 		
+		ocorrencia=findViewById(R.id.btnMainEvent);
+		ocorrencia.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				initOcorrencia();
+			}
+		});
 	}
 
 	protected void initChat() {
 		Intent i = new Intent(this, TelaChat.class);
 		startActivity(i);
 	}
+	
+	protected void initOcorrencia() {
+		Intent i = new Intent(this, TelaOcorrencia.class);
+		startActivity(i);
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-
 }

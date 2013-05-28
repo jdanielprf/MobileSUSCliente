@@ -11,5 +11,9 @@
     <string name="chat">Chat</string>
     <string name="ocorrencia">Ocorrencia</string>
     <string name="capturar">Capturar imagem</string>
+    <string name="descricao">Descrição:</string>
+    <string name="localizacao">Localização:</string>
+    <string name="situacao">Situação:</string>
+    <string name="registrar">Registrar</string>
 
 </resources>

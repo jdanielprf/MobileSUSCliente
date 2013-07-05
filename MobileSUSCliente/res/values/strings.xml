@@ -15,5 +15,11 @@
     <string name="localizacao">Localização:</string>
     <string name="situacao">Situação:</string>
     <string name="registrar">Registrar</string>
+    <string name="title_activity_tela_maps">TelaMaps</string>
+    <string name="title_activity_tela_cam">TelaCam</string>
+    <string name="title_activity_tela_config">TelaConfig</string>
+    <string name="menu_settings">Settings</string>
+    <string name="Mapa">Mapa</string>
+    <string name="Finalizar">Finalizar</string>
 
 </resources>

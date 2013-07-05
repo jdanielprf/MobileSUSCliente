@@ -19,7 +19,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtOcorrenciaDescricao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
@@ -27,19 +27,19 @@
         android:layout_below="@+id/textView1" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtLOorrenciaLocalizacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView3"
-        android:layout_alignRight="@+id/textView2"
+        android:layout_alignRight="@+id/txtOcorrenciaDescricao"
         android:layout_below="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/txtOcorrenciaDescricao"
+        android:layout_below="@+id/txtOcorrenciaDescricao"
         android:layout_marginTop="78dp"
         android:text="@string/localizacao"
         android:textStyle="bold" />
@@ -58,9 +58,47 @@
         android:id="@+id/btnEventRegist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:text="@string/registrar" />
+
+    <Button
+        android:id="@+id/btnOcorrenciaMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnEventRegist"
+        android:layout_alignBottom="@+id/btnEventRegist"
+        android:text="@string/Mapa" />
+
+    <Button
+        android:id="@+id/btnOcorrenciaFina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnEventRegist"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/btnEventRegist"
+        android:text="@string/Finalizar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLOorrenciaLocalizacao"
+        android:layout_alignRight="@+id/txtLOorrenciaLocalizacao"
+        android:layout_below="@+id/txtLOorrenciaLocalizacao"
+        android:layout_marginTop="50dp"
+        android:text="Relatório"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtOcorrenciaRelatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
 
 </RelativeLayout>

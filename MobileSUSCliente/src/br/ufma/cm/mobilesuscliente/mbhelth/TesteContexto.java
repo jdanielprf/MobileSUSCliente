@@ -12,7 +12,7 @@ import br.ufma.lsd.mbhealthnet.communication.pubsub.PubSubTopicListener;
 
 public class TesteContexto {
 
-	private static String local = ConstrantesteMOBHA.idUM;
+	private static String idUM = ConstantesMOBHA.idUM;
 
 	private static MOBHAContext mobhaContext;
 
@@ -20,7 +20,7 @@ public class TesteContexto {
 		System.out.println("inicio contexto");
 		try {
 			mobhaContext = MOBHAContext.getInstance(
-					inp,contexto, local);
+					inp,contexto, idUM);
 			
 			mobhaContext.registerSubTopicListener(new PubSubTopicListener() {
 
@@ -40,6 +40,7 @@ public class TesteContexto {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 		
 		new Thread(new Runnable() {
 			

@@ -27,7 +27,9 @@
         android:layout_above="@+id/txtChatMsg"
         android:layout_alignLeft="@+id/txtChatMsg"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:scrollHorizontally="true"
+        android:selectAllOnFocus="true" />
 
     <Button
         android:id="@+id/btnChatEnviar"

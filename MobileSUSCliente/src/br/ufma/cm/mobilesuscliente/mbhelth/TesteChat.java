@@ -38,14 +38,14 @@ public class TesteChat {
 	}
 
 	public static void init(InputStream inp) {
-		System.out.println("!!!!!!!!!!!!" + ConstrantesteMOBHA.idUM);
+		System.out.println("!!!!!!!!!!!!" + ConstantesMOBHA.idUM);
 		if (contService != null) {
 			return;
 		}
 		try {
 
 			contService = new br.ufma.lsd.mbhealthnet.android.mobha.chat.MOBHAChat(
-					ConstrantesteMOBHA.idUM, inp);
+					ConstantesMOBHA.idUM, inp);
 			contService.registerSubTopicListener(new PubSubTopicListener() {
 				@Override
 				public void processTopic(Object o) {
@@ -66,7 +66,7 @@ public class TesteChat {
 		try {
 			Chat c = new Chat();
 			c.message = dados;
-			c.fromUserName = ConstrantesteMOBHA.idUM;
+			c.fromUserName = ConstantesMOBHA.idUM;
 			c.toUserName = para;
 
 			contService.publishChat(c);
@@ -77,7 +77,7 @@ public class TesteChat {
 	}
 
 	public static void enviar(String dados) {
-		enviar(dados, ConstrantesteMOBHA.central);
+		enviar(dados, ConstantesMOBHA.central);
 	}
 
 	public static void registrar(String u, InterfaceChat c) {

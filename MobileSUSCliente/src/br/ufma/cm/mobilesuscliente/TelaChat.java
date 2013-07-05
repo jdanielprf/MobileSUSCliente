@@ -2,13 +2,14 @@ package br.ufma.cm.mobilesuscliente;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import br.ufma.cm.mobilesuscliente.controller.Controller;
-import br.ufma.cm.mobilesuscliente.mbhelth.ConstrantesteMOBHA;
+import br.ufma.cm.mobilesuscliente.mbhelth.ConstantesMOBHA;
 import br.ufma.cm.mobilesuscliente.mbhelth.InterfaceChat;
 import br.ufma.cm.mobilesuscliente.mbhelth.TesteChat;
 
@@ -23,12 +24,15 @@ public class TelaChat extends Activity implements InterfaceChat {
 		setContentView(R.layout.activity_tela_chat);
 
 		init();
-		TesteChat.registrar(ConstrantesteMOBHA.central, this);
+		TesteChat.registrar(ConstantesMOBHA.central, this);
 	}
 
 	private void init() {
 		history = (TextView) findViewById(R.id.txtChatHistorico);
+		history.setMovementMethod(new ScrollingMovementMethod());
+		
 		message = (EditText) findViewById(R.id.txtChatMsg);
+		message.setMovementMethod(new ScrollingMovementMethod());
 
 		enviar = (Button) findViewById(R.id.btnChatEnviar);
 		enviar.setOnClickListener(new View.OnClickListener() {

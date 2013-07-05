@@ -17,7 +17,7 @@ public class LogicaProcessamento {
 		texto += chamado.getStatus() + "\n";
 		texto += chamado.getRelatorio() + "\n";
 
-		TesteChat.enviar(ConstrantesteMOBHA.central,texto);
+		TesteChat.enviar(ConstantesMOBHA.central,texto);
 	
 	}
 	

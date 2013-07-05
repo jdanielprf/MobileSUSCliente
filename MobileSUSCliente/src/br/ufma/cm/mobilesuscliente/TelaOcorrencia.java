@@ -14,7 +14,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import br.ufma.cm.mobilesuscliente.entidades.Chamado;
-import br.ufma.cm.mobilesuscliente.mbhelth.ConstrantesteMOBHA;
+import br.ufma.cm.mobilesuscliente.mbhelth.ConstantesMOBHA;
 import br.ufma.cm.mobilesuscliente.mbhelth.TesteChat;
 import br.ufma.cm.mobilesuscliente.mbhelth.TesteUpload;
 
@@ -120,7 +120,7 @@ public class TelaOcorrencia extends Activity {
 				photo.compress(Bitmap.CompressFormat.PNG, 100, stream);
 				byte[] byteArray = stream.toByteArray();
 
-				TesteUpload.upload(ConstrantesteMOBHA.idUM, ""
+				TesteUpload.upload(ConstantesMOBHA.idUM, ""
 						+ MainActivity.chamado.getId(),
 						System.currentTimeMillis() + ".png", byteArray);
 

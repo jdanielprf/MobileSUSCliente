@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SUSmobha</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tela_ocorrencia">TelaOcorrencia</string>
+    <string name="title_activity_tela_config">TelaConfig</string>
+    <string name="title_activity_tela_chat">TelaChat</string>
+    <string name="title_activity_tela_maps">TelaMaps</string>
+
+</resources>
